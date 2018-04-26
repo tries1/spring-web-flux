@@ -11,6 +11,12 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    //Spring Context는 또한 SpringIoC컨테이너라고도 불리며, 구성 파일에서 XML, Java주석 및/또는 Java코드의 구성 메타 데이터를 읽어 콩의 인스턴스화, 구성 및 조립을 담당합니다.
+    compile('org.springframework:spring-context:5.0.5.RELEASE')
+
+    //srpign web-flux
+    compile('org.springframework:spring-webflux:5.0.5.RELEASE')
+    compile('org.projectlombok:lombok:1.16.10')
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
